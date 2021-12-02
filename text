@@ -1,0 +1,22 @@
+/*----------------color-----------*/
+background: #FF6F3D;
+
+
+
+/*----------------font family-----------*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+font-family: 'Roboto', sans-serif;
+
+
+/*----------------image-----------*/
+Generators on the Internet tend to repeat predefined chunks as necessary
+
+Even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to
+
+
+
+/*----------------icon-----------*/
+<i class="fas fa-map-marker-alt"></i>
+<i class="fa fa-phone"></i>
+<i class="fa fa-envelope"></i>
+<i class="fas fa-long-arrow-alt-right"></i>

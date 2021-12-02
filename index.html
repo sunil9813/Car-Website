@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <title>Car Website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/style.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header class="header-area">
+    <div class="navbar-area">
+      <nav class="site-navbar">
+        <a href="#home" class="site-logo">MOTORA</a>
+
+        <div class="linsk flex">
+          <ul>
+            <li><a href="#">home</a></li>
+            <li><a href="#">about</a></li>
+            <li><a href="#">service</a></li>
+            <li><a href="#">contact</a></li>
+          </ul>
+
+          <div class="account">
+            <i class="fas fa-search"></i>
+            <i class="fas fa-phone-alt"> </i>
+            <span>Call : +123 456 7898</span>
+          </div>
+
+
+          <div class="nav-toggler">
+            <i class="fas fa-bars"></i>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <script>
+    const navToggler = document.querySelector('.nav-toggler');
+    const navMenu = document.querySelector('.site-navbar ul');
+    const navLinks = document.querySelectorAll('.site-navbar a');
+
+    allEventListners();
+
+    function allEventListners() {
+      navToggler.addEventListener('click', togglerClick);
+      navLinks.forEach(elem => elem.addEventListener('click', navLinkClick));
+    }
+
+    function togglerClick() {
+      navToggler.classList.toggle('toggler-open');
+      navMenu.classList.toggle('open');
+    }
+  </script>
+
+
+
+  <section class="home top">
+    <div class="container">
+      <div class="circle"> </div>
+      <div class="owl-carousel owl-theme">
+        <div class="item flex">
+          <div class="left mtop">
+            <h1>Car Repair And Maintenance</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <div class="button">
+              <button class="btn1">Read More</button>
+              <button class="btn2">Contact Us</button>
+            </div>
+          </div>
+          <div class="right mtop">
+            <img src="image/home.png" alt="">
+          </div>
+        </div>
+        <div class="item flex">
+          <div class="left mtop">
+            <h1>Car Repair And Maintenance</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <div class="button">
+              <button class="btn1">Read More</button>
+              <button class="btn2">Contact Us</button>
+            </div>
+          </div>
+          <div class="right mtop">
+            <img src="image/home.png" alt="">
+          </div>
+        </div>
+        <div class="item flex">
+          <div class="left mtop">
+            <h1>Car Repair And Maintenance</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <div class="button">
+              <button class="btn1">Read More</button>
+              <button class="btn2">Contact Us</button>
+            </div>
+          </div>
+          <div class="right mtop">
+            <img src="image/home.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+
+
+  <script>
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      margin: 10,
+      nav: false,
+      responsive: {
+        0: {
+          items: 1
+        },
+        768: {
+          items: 1
+        },
+        1000: {
+          items: 1
+        }
+      }
+    })
+  </script>
+
+
+  <section class="services">
+    <div class="container">
+      <h2>Our Services</h2>
+
+      <div class="content grid mtop">
+        <div class="box">
+          <img src="image/s1.png" alt="">
+          <h3>General Maintenance</h3>
+          <p>Generators on the Internet tend to repeat predefined chunks as necessary</p>
+          <a href="#">Read More <i class="fas fa-long-arrow-alt-right"></i></a>
+        </div>
+        <div class="box">
+          <img src="image/s2.png" alt="">
+          <h3>General Maintenance</h3>
+          <p>Generators on the Internet tend to repeat predefined chunks as necessary</p>
+          <a href="#">Read More <i class="fas fa-long-arrow-alt-right"></i></a>
+        </div>
+        <div class="box">
+          <img src="image/s3.png" alt="">
+          <h3>General Maintenance</h3>
+          <p>Generators on the Internet tend to repeat predefined chunks as necessary</p>
+          <a href="#">Read More <i class="fas fa-long-arrow-alt-right"></i></a>
+        </div>
+        <div class="box">
+          <img src="image/s4.png" alt="">
+          <h3>General Maintenance</h3>
+          <p>Generators on the Internet tend to repeat predefined chunks as necessary</p>
+          <a href="#">Read More <i class="fas fa-long-arrow-alt-right"></i></a>
+        </div>
+        <div class="box">
+          <img src="image/s5.png" alt="">
+          <h3>General Maintenance</h3>
+          <p>Generators on the Internet tend to repeat predefined chunks as necessary</p>
+          <a href="#">Read More <i class="fas fa-long-arrow-alt-right"></i></a>
+        </div>
+        <div class="box">
+          <img src="image/s6.png" alt="">
+          <h3>General Maintenance</h3>
+          <p>Generators on the Internet tend to repeat predefined chunks as necessary</p>
+          <a href="#">Read More <i class="fas fa-long-arrow-alt-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="about">
+    <div class="container flex">
+      <div class="circle"></div>
+      <div class="left top">
+        <img src="image/a.png" alt="">
+      </div>
+      <div class="right top">
+        <h1>About Us </h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+        <button class="btn2">Read More</button>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="services choose top">
+    <div class="container">
+      <h1>Why Choose Us</h1>
+
+      <div class="content grid mtop">
+        <div class="box">
+          <img src="image/w1.png" alt="">
+          <h3>Best Workers </h3>
+          <p>Generators on the Internet tend to repeat predefined chunks as necessary</p>
+          <a href="#">Read More <i class="fas fa-long-arrow-alt-right"></i></a>
+        </div>
+        <div class="box">
+          <img src="image/w2.png" alt="">
+          <h3>Best Materials </h3>
+          <p>Generators on the Internet tend to repeat predefined chunks as necessary</p>
+          <a href="#">Read More <i class="fas fa-long-arrow-alt-right"></i></a>
+        </div>
+        <div class="box">
+          <img src="image/w3.png" alt="">
+          <h3>Best Service </h3>
+          <p>Generators on the Internet tend to repeat predefined chunks as necessary</p>
+          <a href="#">Read More <i class="fas fa-long-arrow-alt-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="customer top">
+    <div class="container">
+      <h1>Testimonial </h1>
+      <p>Even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to </p>
+
+      <div class="owl-carousel owl-theme mtop content">
+        <div class="item flex">
+          <div class="image">
+            <div class="img">
+              <img src="image/serv.jpg" alt="">
+            </div>
+          </div>
+          <div class="text">
+            <div class="heading flex1">
+              <div class="para">
+                <h3>MORO JINK</h3>
+                <h5>CUSTOMER</h5>
+              </div>
+              <div class="para">
+                <i class="fas fa-quote-left"></i>
+              </div>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+        </div>
+        <div class="item flex">
+          <div class="image">
+            <div class="img">
+              <img src="image/serv.jpg" alt="">
+            </div>
+          </div>
+          <div class="text">
+            <div class="heading flex1">
+              <div class="para">
+                <h3>MORO JINK</h3>
+                <h5>CUSTOMER</h5>
+              </div>
+              <div class="para">
+                <i class="fas fa-quote-left"></i>
+              </div>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+        </div>
+        <div class="item flex">
+          <div class="image">
+            <div class="img">
+              <img src="image/serv.jpg" alt="">
+            </div>
+          </div>
+          <div class="text">
+            <div class="heading flex1">
+              <div class="para">
+                <h3>MORO JINK</h3>
+                <h5>CUSTOMER</h5>
+              </div>
+              <div class="para">
+                <i class="fas fa-quote-left"></i>
+              </div>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <script>
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      margin: 20,
+      nav: true,
+      dots: false,
+      navText: ["<i class='far fa-chevron-left'></i>", "<i class='far fa-chevron-right'></i>"],
+      responsive: {
+        512: {
+          items: 1
+        },
+        768: {
+          items: 1
+        },
+        1000: {
+          items: 1
+        }
+      }
+    })
+  </script>
+
+
+  <section class="contact top">
+    <div class="container flex">
+      <div class="circle"> </div>
+      <div class="left">
+        <h1>Get In Touch</h1>
+
+        <form>
+          <input type="text" placeholder="Your Name">
+          <input type="text" placeholder="Your Email">
+          <input type="text" placeholder="Your Phone">
+          <textarea rows="5" cols="80">Message</textarea>
+          <button class="btn2">SEND</button>
+        </form>
+      </div>
+      <div class="right">
+        <div class="img">
+          <img src="image/contact.png" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container top">
+      <div class="content grid">
+        <div class="box flex">
+          <i class="fas fa-map-marker-alt"></i>
+          <span>Loaction</span>
+        </div>
+        <div class="box flex">
+          <i class="fa fa-phone-alt"></i>
+          <span>+123 456 7998</span>
+        </div>
+        <div class="box flex">
+          <i class="fa fa-envelope"></i>
+          <span>demo@example.com</span>
+        </div>
+        <div class="box flex">
+          <input type="text" placeholder="Your Email address">
+          <i class="fas fa-long-arrow-alt-right"></i>
+        </div>
+      </div>
+
+      <div class="soical mtop">
+        <div class="logo">
+          <h1>MOTORA</h1>
+        </div>
+        <ul>
+          <li> <i class="fab fa-facebook-f"></i></li>
+          <li> <i class="fab fa-instagram"></i></li>
+          <li> <i class="fab fa-twitter"></i></li>
+          <li> <i class="fab fa-youtube"></i></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <div class="legal">
+    <p>Copyright (c) 2021 Copyright Holder All Rights Reserved.</p>
+  </div>
+</body>
+
+</html>
